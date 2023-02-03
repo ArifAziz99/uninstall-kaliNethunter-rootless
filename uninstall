@@ -14,7 +14,8 @@ Now you will be prompted that:
 a rootfs file already exist, do you want to delete and install new rootfs file? (similar to this)
 
 Now here is the trick:
-type y and start the process, the installer will first delete the already existing nethunter-rootfs file and will start downloading it again, but before its starts downloading just type ctrl^c and end the process. (do it on time before the downloading begins)
+type y and start the process, the installer will first delete the already existing nethunter-rootfs file and will start downloading it again, 
+but before its starts downloading just type ctrl^c and end the process. (do it on time before the downloading begins)
 Kali Nethunter will be uninstalled.
 
 if the downloading began and you were not able to cancel it on time, you will have to remove the downloaded file:
