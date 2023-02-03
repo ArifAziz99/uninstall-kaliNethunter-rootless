@@ -1,0 +1,29 @@
+This is what I did to uninstall kali nethunter (rootless) installed with termux on my android.
+Not sure if this will work for you!! I was not able to find any other solution to uninstall it.
+
+First open termux and type ls in the home directory.
+After that check if there is a nethunter installer, like this one:
+
+install-nethunter-termux
+
+it will be in green font color normally.
+
+Now just run this installer, type: bash install-nethunter-termux
+Now you will be prompted that:
+
+a rootfs file already exist, do you want to delete and install new rootfs file? (similar to this)
+
+Now here is the trick:
+type y and start the process, the installer will first delete the already existing nethunter-rootfs file and will start downloading it again, but before its starts downloading just type ctrl^c and end the process. (do it on time before the downloading begins)
+Kali Nethunter will be uninstalled.
+
+if the downloading began and you were not able to cancel it on time, you will have to remove the downloaded file:
+the downloaded file will be:
+
+nethunter-rootfs.tar.gz
+
+Remove it with this command: pkg remove nethunter-rootfs.tar.gz
+
+if you have other kali file remove it with pkg remove <pkgname>
+
+type : nh and also check the storage space before and after the process and confirm that it is indeed uninstalled.
